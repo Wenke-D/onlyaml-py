@@ -1,8 +1,17 @@
 from setuptools import setup, find_packages
 
+x = 0
+
+y = 1
+
+z = 1
+
+version = "{}.{}.{}".format(x, y, z)
+
+
 setup(
     name='onlyaml',
-    version='0.1.0',
+    version=version,
     description='A python lib impose your program only accept yaml file as CL argument',
     url='https://github.com/shuds13/pyexample',
     author='WD',

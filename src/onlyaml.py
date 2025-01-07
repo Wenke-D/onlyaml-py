@@ -2,6 +2,7 @@ import yaml
 import sys
 import argparse
 from pathlib import Path
+from readonly_config import ReadonlyDict
 
 
 def perr_exit(value, exit_code=1):
@@ -33,7 +34,7 @@ def parse_file(filepath: Path, exit_code=1):
                     exit_code=exit_code
                 )
 
-    return config
+    return ReadonlyDict(config)
 
 
 def parse(description="Your marvellous application !", exit_code=1):
