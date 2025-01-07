@@ -2,12 +2,8 @@ import yaml
 import sys
 import argparse
 from pathlib import Path
-from readonly_config import ReadonlyDict
-
-
-def perr_exit(value, exit_code=1):
-    print(value, file=sys.stderr)
-    exit(exit_code)
+from onlyaml.readonly_config import ReadonlyDict
+from .err import perr_exit
 
 
 def parse_file(filepath: Path, exit_code=1):

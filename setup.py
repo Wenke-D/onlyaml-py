@@ -4,7 +4,7 @@ x = 0
 
 y = 1
 
-z = 2
+z = 4
 
 version = "{}.{}.{}".format(x, y, z)
 
