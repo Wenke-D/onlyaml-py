@@ -1,0 +1,9 @@
+# Distribution / Packaging
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# test
+test
